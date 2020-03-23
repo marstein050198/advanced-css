@@ -1,0 +1,188 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+.homepage {
+  margin: 0;
+  background: url("../img/IMG_3657.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #666666;
+}
+
+.topnav a.active {
+  background-color: rgb(247, 126, 27);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.hero-text {
+  height: 300px;
+  font-size: 60px;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke: 3px black;
+}
+
+.header {
+    grid-area: header;
+    background: white;
+    text-align: center;
+    text-decoration: none;
+  }
+#intro {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+#gallery img {
+  width: 200px;
+  margin: 20px;
+}
+#gallery {
+  background-color: black;
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-areas:
+  'img1 img2'
+  'img3 img4'
+  'img5 img6'
+  'img7 img8'
+}
+#img1 {
+  grid-area: img1;
+}
+#img2 {
+  grid-area: img2;
+}
+#img3 {
+  grid-area: img3;
+}
+#img4 {
+  grid-area: img4;
+}
+#img5 {
+  grid-area: img5;
+}
+#img6 {
+  grid-area: img6;
+}
+#img7 {
+  grid-area: img7;
+}
+#img8 {
+  grid-area: img8;
+}
+@media only screen and (min-width: 600px) {
+  #gallery {
+    display: grid;
+    grid-template-areas:
+    'img1 img2 img3 img4'
+    'img5 img6 img7 img8'
+  }
+}
+#attractions img {
+  width: 200px;
+  margin: 10px;
+}
+#attractions p {
+  color: white;
+  margin: 10px;
+}
+
+#attractions {
+  background-color: black;
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-areas:
+  'img1 text1'
+  'img2 text2'
+  'img3 text3'
+  'img4 text4'
+  'img5 text5'
+}
+#text1 {
+  grid-area: text1;
+}
+#text2 {
+  grid-area: text2;
+}
+#text3 {
+  grid-area: text3;
+}
+#text4 {
+  grid-area: text4;
+}
+#text5 {
+  grid-area: text5;
+}
+#journals{
+  background-color: black;
+  margin: 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-areas:
+  'Marissa'
+  'Jamie'
+  'Spencer'
+  'Becca'
+  'Natalie'
+}
+#journals p {
+  color: white;
+  margin: 10px;
+}
+#journals h2 {
+  color: white;
+  text-align:center;
+}
+#Marissa {
+  grid-area: Marissa;
+}
+#Jamie{
+  grid-area: Jamie;
+}
+#Spencer {
+  grid-area: Spencer;
+}
+#Becca {
+  grid-area: Becca;
+}
+#Natalie {
+  grid-area: Natalie;
+}
+
+@media only screen and (min-width: 600px) {
+  #journals {
+    display: grid;
+    grid-template-areas:
+    'Marissa Jamie Spencer Becca Natalie'
+  }
+}
